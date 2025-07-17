@@ -1,7 +1,7 @@
-const express = require('express');
-const path = require('path');
-const fs = require('fs');
-const mime = require('mime'); // Install this package: npm install mime
+import express from 'express';
+import path from 'path';
+import fs from 'fs';
+import mime from 'mime'; // Install this package: npm install mime
 
 const router = express.Router();
 
@@ -30,4 +30,4 @@ router.get('/fonts/:fontFileName', (req, res) => {
   });
 });
 
-module.exports = router;
+export default router;
